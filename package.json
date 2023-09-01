@@ -1,0 +1,19 @@
+{
+  "name": "k6_stress_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "find ./test -name '*.js' | xargs -I {} k6 run {}"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "k6": "^0.0.0",
+    "k6-html-reporter": "^1.0.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
