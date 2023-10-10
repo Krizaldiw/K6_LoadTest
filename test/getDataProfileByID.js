@@ -47,7 +47,7 @@ export function teardown() {
 
 export default function () {
   // Ganti URL sesuai dengan endpoint yang sesuai
-  let res = http.get('http://localhost:5000/GetDataById/64df213d31ff23688a2f5d0e');
+  let res = http.get('INPUT_YOUR_URL_OR_ENDPOINT');
   
   // Lakukan pemeriksaan terhadap respons
   check(res, { 'status is 200': (r) => r.status === 200 });
