@@ -46,7 +46,7 @@ export function teardown() {
 }
 
 export default function () {
-  let res = http.get('http://localhost:5000/GetData'); // Ganti URL sesuai dengan endpoint yang sesuai
+  let res = http.get('INPUT_YOUR_ENDPOINT'); // Ganti URL sesuai dengan endpoint yang sesuai
   check(res, { 'status is 200': (r) => r.status === 200 });
   
   sleep(5);
